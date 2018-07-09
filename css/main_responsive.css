@@ -92,13 +92,17 @@ header nav ul li a{
 header{
     width: 100%;
     height: 80px;
-    background: #353434;
+    /* background: #353434; */
+    background: rgba(53,52,52, 0.1);
+    position: absolute;
+    text-align: right;
 }
 
 header .logo{
     float: left;
     margin-top: 7px;
     max-height: 66px;
+    text-align: center;
 }
 
 header .menu_icon{
@@ -116,7 +120,7 @@ header nav{
     display: inline-block;
     margin: 20px 0 0 40px;
     padding: 13px 40px;
-    border-left: 1px #404040 solid;
+    /* border-left: 1px #404040 solid; */
     z-index: 9999;
 }
 
@@ -191,29 +195,51 @@ header ul.social li a.gplus{
 /*  Billboard  */
 .billboard{
     width: 100%;
-    height: 580px;
-    background: url("../img/billboard2.jpg") no-repeat center center;
+    /* height: 580px; */
+    height: 750px;
+    background: url("../img/driftwood-sculpture.jpg") no-repeat center center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     overflow: hidden;
+    text-align: left;
+    margin: 0px;
+}
+
+.billboard-title{
+  /* max-height: 220px;
+  width: auto;
+  background: rgba(255,255,255, 1.0);
+  padding: 20px;
+  border: 5px solid black; */
+
+  max-height: 180px;
+  width: auto;
+  display: inline-block;
+  color: #000;
+  /* font-family: "lato_regular", arial; */
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+
 }
 
 .billboard .caption{
     /* margin-left: 515px; */
-    margin-top: 220px;
+    margin-top: 510px;
+    margin-right: 20px;
+
 }
 
 .billboard .caption p{
     display: inline-block;
     color: #000;
-    font-family: "lato_regular", arial;
+    /* font-family: "lato_regular", arial; */
     font-weight: bold;
     font-size: 35px;
     margin-bottom: 2px;
     text-transform: uppercase;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
 }
 
@@ -312,6 +338,7 @@ header ul.social li a.gplus{
     font-family: arial;
     margin-left: 10px;
 }
+
 
 
 
@@ -623,10 +650,10 @@ a{
 
 
 @media (max-width:1000px){
-    .billboard .caption{
+    /* .billboard .caption{
         text-align: center;
         margin-left: 0;
-    }
+    } */
     .cta{
         width: 80%;
         margin: 0 auto;
